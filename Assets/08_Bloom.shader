@@ -74,7 +74,7 @@ Shader "Unlit/08_Bloom"
 		// 直線的なぼかし
 		fixed4 AngleBlur(v2f i)
 		{
-			float totalWeight = 0, _Sigma = 0.005, _StepWidth = 0.001;
+			float totalWeight = 0;
 			float4 col = fixed4(0, 0, 0, 0);
 			// 取得座標
 			float2 pickUV = float2(0, 0);

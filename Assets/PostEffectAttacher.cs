@@ -28,7 +28,7 @@ public class PostEffectAttacher : MonoBehaviour
 		BloomA = 4,
 	}
 	// 選択したもの
-	public SelectShader select = SelectShader.Normal;
+	public static SelectShader select = SelectShader.Normal;
 
 	// 直線的なぼかしの角度
 	public Vector2 _BlurAngle = new Vector2(45, 135);
