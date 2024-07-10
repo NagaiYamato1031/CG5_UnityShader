@@ -8,6 +8,12 @@ Shader "Unlit/01_Simple"
 
 	SubShader
 	{
+		Tags{
+			"Queue" = "Transparent"
+		}
+
+		Blend SrcAlpha OneMinusSrcAlpha
+
 		Pass
 		{
 			CGPROGRAM

@@ -9,6 +9,12 @@ Shader "Unlit/05_Texture"
 	}
 	SubShader
 	{
+		Tags{
+			"Queue" = "Transparent"
+		}
+
+		Blend SrcAlpha OneMinusSrcAlpha
+
 		Pass
 		{
 			CGPROGRAM
@@ -92,7 +98,7 @@ Shader "Unlit/05_Texture"
 				// }
 				
 				// 反射無し
-				//return col;
+				return col;
 
 				//Phong 反射
 				fixed4 color = col * _Color;
